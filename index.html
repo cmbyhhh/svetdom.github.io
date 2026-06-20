@@ -242,7 +242,7 @@ function exportPhotos(){
 
 // ── Sold / ПРОДАНО state ──
 const SOLD_KEY = 'salon_sold_v2';
-const PRELOADED_SOLD = {"0":1,"1":1};
+const PRELOADED_SOLD = {"0":1,"1":1,"133":1,"134":1,"135":1,"140":1};
 let sold = {};
 try { sold = JSON.parse(localStorage.getItem(SOLD_KEY) || '{}'); } catch(e){}
 for (const k in PRELOADED_SOLD){ if(!(k in sold)) sold[k]=1; }
